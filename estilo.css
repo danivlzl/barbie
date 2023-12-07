@@ -1,0 +1,219 @@
+:root{
+    --pink: #e84393;
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+.section{
+    padding: 2rem 9%;
+}
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255,51,153,.05);
+}
+
+.heading span{
+    color: var(--pink);
+}
+.more{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.more:hover{
+    background:var(--pink) ;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.container {
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: inline-block;
+    
+  }
+  
+.product {
+    margin-bottom: 30px;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: var(--pink);
+    border-radius: 8px;
+    margin: 15px;
+    width: 45%;
+  }
+  
+.product img {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+.button
+  {
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: #e84393;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+.home  .contenido-textos .span{
+    color:var(--pink);
+}
+header .logo{
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color:var(--pink);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+
+header .navbar a:hover{
+    color:var(--pink);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url(https://c4.wallpaperflare.com/wallpaper/298/250/522/barbie-for-mac-desktop-wallpaper-preview.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color:#333;
+}
+.home .content span{
+    font-size: 3.5rem;
+    color:var(--pink);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+.home .content p{
+    font-size: 1.5rem;
+    color: #999;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.about .image{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;}
+
+    
+
+.contenedor-footer{
+        flex-direction: column;
+        border: none;
+}
+
+.contenidofooter{
+        margin-bottom: 20px;
+        text-align: center;
+}
+
+.contenidofooter h4{
+        border: none;
+ }
+
+.contenidofooter p{
+        color:var(--pink);
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+ }
+
+
+.titulo-final{
+            font-size: 20px;
+}
+
+
+/* Media*/
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+}
+@media (max-width:768px){
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+    }
+    
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0,0,0,.1);
+}
+
+}
